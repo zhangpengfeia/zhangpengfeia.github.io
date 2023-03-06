@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>有关动态效果方案 | 张鹏飞个人站</title>
+  <meta name="keywords" content=" 前端 , 动画 , 动态 , 动效 ">
+  <meta name="description" content="有关动态效果方案 | 张鹏飞个人站">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="张鹏飞个人站">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-01T03:01:17.000Z">
+<meta property="article:modified_time" content="2023-03-01T03:01:17.737Z">
+<meta property="article:author" content="张鹏飞">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>张鹏飞</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/zhangpengfeia"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://blog.csdn.net/qq_44393247?spm=1000.2115.3001.5343"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:zhangpengfei_email@163.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1409796144&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=528106448"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(15)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="前端">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        前端
+                        <small>(10)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="前端<--->原生js">
+                                        
+                                        原生js
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="前端<--->react">
+                                        
+                                        react
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="前端<--->vue">
+                                        
+                                        vue
+                                        
+                                            <small>(3
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="后端">
+                        
+                        后端
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="运维">
+                        
+                        运维
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="算法">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        算法
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="算法<--->基础">
+                                        
+                                        基础
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="git">
+                        
+                        git
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="zhangpengfeia_site_posts_number" value="15">
+<input type="hidden" id="zhangpengfeia_site_word_count" value="10.9k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>动画</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>动态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>动效</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>后端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>算法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原生js</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>运维</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ant-design-pro</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>react</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>vue-admin-element-plus</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 前端 react "
+           href="/2023/03/06/%E5%89%8D%E7%AB%AF/react/%E5%AD%A6%E4%B9%A0ant-design-pro/"
+           data-tag="前端,react,ant-design-pro"
+           data-author="" >
+            <span class="post-title" title="学习ant-design-pro">学习ant-design-pro</span>
+            <span class="post-date" title="2023-03-06 09:20:24">2023/03/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2023/03/02/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%92%8C%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"
+           data-tag="算法"
+           data-author="" >
+            <span class="post-title" title="时间复杂度and空间复杂度">时间复杂度and空间复杂度</span>
+            <span class="post-date" title="2023-03-02 08:22:14">2023/03/02</span>
+        </a>
+        
+        
+        <a  class="全部文章 后端 "
+           href="/2023/03/01/%E5%90%8E%E7%AB%AF/demo/"
+           data-tag="后端"
+           data-author="" >
+            <span class="post-title" title="demo">demo</span>
+            <span class="post-date" title="2023-03-01 16:01:35">2023/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 运维 "
+           href="/2023/03/01/%E8%BF%90%E7%BB%B4/demo/"
+           data-tag="运维"
+           data-author="" >
+            <span class="post-title" title="demo">demo</span>
+            <span class="post-date" title="2023-03-01 16:01:30">2023/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 vue "
+           href="/2023/03/01/%E5%89%8D%E7%AB%AF/vue/%E5%AD%A6%E4%B9%A0vue3-admin-elementPlus/"
+           data-tag="前端,vue,vue-admin-element-plus"
+           data-author="" >
+            <span class="post-title" title="学习vue3-admin-elementPlus">学习vue3-admin-elementPlus</span>
+            <span class="post-date" title="2023-03-01 15:59:12">2023/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 vue "
+           href="/2023/03/01/%E5%89%8D%E7%AB%AF/vue/vue3%E6%9D%82%E7%83%A9/"
+           data-tag="前端,vue"
+           data-author="" >
+            <span class="post-title" title="vue3杂烩">vue3杂烩</span>
+            <span class="post-date" title="2023-03-01 08:35:14">2023/03/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2020/11/06/%E5%89%8D%E7%AB%AF/%E6%9C%89%E5%85%B3%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E6%96%B9%E6%A1%88/"
+           data-tag="前端,动画,动态,动效"
+           data-author="" >
+            <span class="post-title" title="有关动态效果方案">有关动态效果方案</span>
+            <span class="post-date" title="2020-11-06 15:23:11">2020/11/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 vue "
+           href="/2020/09/25/%E5%89%8D%E7%AB%AF/vue/vue%E8%BD%AE%E6%92%AD%E5%9B%BE%E5%B8%A7%E7%8E%87%E6%92%AD%E6%94%BE/"
+           data-tag="前端,vue"
+           data-author="" >
+            <span class="post-title" title="vue实现图片帧率轮播播放">vue实现图片帧率轮播播放</span>
+            <span class="post-date" title="2020-09-25 00:00:00">2020/09/25</span>
+        </a>
+        
+        
+        <a  class="全部文章 git "
+           href="/2020/09/06/git/01-git%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E6%93%8D%E4%BD%9C/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git本地操作命令">git本地操作命令</span>
+            <span class="post-date" title="2020-09-06 16:21:43">2020/09/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 git "
+           href="/2020/09/06/git/02-git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%93%8D%E4%BD%9C/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git远程仓库命令">git远程仓库命令</span>
+            <span class="post-date" title="2020-09-06 16:21:43">2020/09/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 原生js "
+           href="/2020/08/22/%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/js%E7%BA%BF%E7%A8%8B,%E4%BA%8B%E4%BB%B6%E7%BA%A7%E5%88%AB,%E5%AE%BF%E4%B8%BB%E5%AF%B9%E8%B1%A1/"
+           data-tag="前端,原生js"
+           data-author="" >
+            <span class="post-title" title="js线程,事件级别,宿主对象">js线程,事件级别,宿主对象</span>
+            <span class="post-date" title="2020-08-22 22:34:23">2020/08/22</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 原生js "
+           href="/2020/08/22/%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/js%E4%B8%8D%E5%B8%B8%E8%A7%81%E6%96%B9%E6%B3%95%E5%8F%8A%E5%B1%9E%E6%80%A7/"
+           data-tag="前端,原生js"
+           data-author="" >
+            <span class="post-title" title="js不常见方法及属性">js不常见方法及属性</span>
+            <span class="post-date" title="2020-08-22 22:34:23">2020/08/22</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 原生js "
+           href="/2020/08/22/%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/%E6%B8%85%E9%99%A4%E6%89%80%E6%9C%89%E9%A1%B5%E9%9D%A2%E5%AE%9A%E6%97%B6%E5%99%A8/"
+           data-tag="前端,原生js"
+           data-author="" >
+            <span class="post-title" title="js小技巧清除所有页面定时器">js小技巧清除所有页面定时器</span>
+            <span class="post-date" title="2020-08-22 22:34:23">2020/08/22</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 原生js "
+           href="/2020/08/20/%E5%89%8D%E7%AB%AF/%E5%8E%9F%E7%94%9Fjs/es6%20Api%E6%80%BB%E7%BB%93/"
+           data-tag="前端,原生js"
+           data-author="" >
+            <span class="post-title" title="es6 Api总结">es6 Api总结</span>
+            <span class="post-date" title="2020-08-20 21:34:23">2020/08/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2019/05/06/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"
+           data-tag="前端,优化"
+           data-author="" >
+            <span class="post-title" title="前端优化相关">前端优化相关</span>
+            <span class="post-date" title="2019-05-06 14:02:48">2019/05/06</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" >
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-前端/有关动态效果方案" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">有关动态效果方案</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="前端">前端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">前端</a>
+            
+            <a class="color3">动画</a>
+            
+            <a class="color3">动态</a>
+            
+            <a class="color3">动效</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-03-03 23:04:23'>2020-11-06 15:23</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:2.5k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <!-- <div class="cube1"></div>
+                      <div class="cube2"></div> -->
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%95%88%EF%BC%9A%E5%8A%A8%E6%80%81%E7%9A%84%E6%95%88%E6%9E%9C"><span class="toc-text">动效：动态的效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%86%E7%B1%BB%EF%BC%9A"><span class="toc-text">功能分类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%EF%BC%9A"><span class="toc-text">技术方案：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%85%AC%E5%8F%B8%E9%83%BD%E7%94%A8%E4%BB%80%E4%B9%88%EF%BC%9A"><span class="toc-text">其他公司都用什么：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%95%88%E5%BA%93%EF%BC%9A"><span class="toc-text">动效库：</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><div class='inner-toc'><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%95%88%EF%BC%9A%E5%8A%A8%E6%80%81%E7%9A%84%E6%95%88%E6%9E%9C"><span class="toc-text">动效：动态的效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%86%E7%B1%BB%EF%BC%9A"><span class="toc-text">功能分类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%EF%BC%9A"><span class="toc-text">技术方案：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%85%AC%E5%8F%B8%E9%83%BD%E7%94%A8%E4%BB%80%E4%B9%88%EF%BC%9A"><span class="toc-text">其他公司都用什么：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%95%88%E5%BA%93%EF%BC%9A"><span class="toc-text">动效库：</span></a></li></ol></li></ol></div></p>
+<h2 id="动效：动态的效果"><a href="#动效：动态的效果" class="headerlink" title="动效：动态的效果"></a>动效：动态的效果</h2><blockquote>
+<p>针对于百度智能云活动页动效技术方案：GIF、apng、WebP、png序列帧、lottie、视频、css animation、svg、svga、canvas、webGL；</p>
+</blockquote>
+<h3 id="功能分类："><a href="#功能分类：" class="headerlink" title="功能分类："></a>功能分类：</h3><ol>
+<li><p>展示型的动画：尽可能的为用户制造视觉上的愉悦，营造活动氛围，让用户觉得有趣生动；（「品牌展示」、「运营活动」、「H5营销」）</p>
+</li>
+<li><p>交互型的动画：负责元素串联，例如tab切换、左滑删除、二级菜单展开、返回顶部等；（帮助用户理解界面的层级逻辑关系，提升产品体验）</p>
+</li>
+<li><p>功能型的动效：上拉加载、下拉刷新、加载进度；（动过动态形式帮助用户理解和使用产品）；</p>
+</li>
+</ol>
+<h3 id="技术方案："><a href="#技术方案：" class="headerlink" title="技术方案："></a>技术方案：</h3><p><strong>一、GIF：（2D、3D）</strong></p>
+<blockquote>
+<p>用途：适合去展示一些无限循环的小图动画，比如图标、表情、广告栏等；建议大小：200KB以内；（来源：网上查询）</p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<ol>
+<li>极强的兼容性；</li>
+<li>开发成本较低，沟通成本小；</li>
+</ol>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<ol>
+<li>一种有损格式（色彩和画质都有一定的压缩），只支持8位256色；</li>
+<li>透明的元素常常伴有锯齿和白边；</li>
+<li>gif无法控制播放和暂停，比较死板，切换连贯性比较难保证；</li>
+<li>单次播放的gif即使删除元素再次也不会播放，必须改变链接重新加载才会播放；</li>
+<li>体积一般（是同等素材png序列帧的一半大小、可控制压缩率）；</li>
+</ol>
+</blockquote>
+<p><strong>二、apng(可以动的png，gif升级版):（2D、3D）</strong></p>
+<blockquote>
+<p>建议大小：200KB以内；（来源：网上查询）。网盘独有问题：apng图片第一次加载会有颜色失真问题，图片越大问题越明显。</p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>A、兼容性好；<br>B、开发成本较低，沟通成本小；<br>C、对比gif：色值更高，完美支持1600万种颜色；对于渐变透明的元素，有着非常优秀的成像效果；体积略小于gif；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>A、无法控制播放和暂停，比较死板，切换连贯性比较难保证；<br>B、单次播放同gif；<br>C、体积一般（是同等素材png序列帧的一半大小、可控制压缩率）；</p>
+</blockquote>
+<p><strong>三、WebP：（2D、3D）</strong></p>
+<blockquote>
+<p>淘宝web页面webp+jpg组合：使用建议：不考虑IE的web、主站electron项目、客户端。wap不建议使用。</p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>1、无损压缩图片比PNG格式小26%；有损压缩图片比JPEG小25~34%；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>1、ios设备支持度不好，13.7之前不支持，14之后才开始支持；安卓设备兼容性比较好；<br>2、IE全部不支持；</p>
+</blockquote>
+<p><strong>四、png实现的序列帧（animation）:（2D、3D）</strong></p>
+<blockquote>
+<p>建议：3M以内；（来源：网盘测试3兆以内图片预加载2秒内可以加载完成）；使用建议：追求画质但不太复杂的局部动效图，全屏复杂动效不建议；</p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>A、兼容性好；<br>B、可实现复杂动画效果；<br>C、可控制动画时间和播放暂停以及暂停位置；<br>D、开发成本中等，沟通成本小；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>A、图片资源体积较大；<br>B、在不同屏幕分辨率下可能会失真；</p>
+</blockquote>
+<p><strong>五、视频:（2D、3D）</strong></p>
+<blockquote>
+<p>建议：mp4格式、3M以内（预加载3秒）</p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>1、兼容性好；<br>2、比GIF的内存占用更小；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>1、对透明度通道支持不友好；<br>2、有损格式；<br>3、视频置顶播放：原生播放组件被唤起，视频弹窗并置顶，遮挡整个页面，页面无法交互；<br>4、慢网络体验差：视频是持续加载的，如果网络慢用户体验会非常差，卡顿明显；</p>
+</blockquote>
+<p><strong>六、lottie动画：（2D）</strong></p>
+<blockquote>
+<p>前端库：lottie-web；<br>使用建议：转场动画、tab点击动效、运营banner位。<br>痛点：百度小程序lotiie在所有元素最高层，普通的div等元素无法将其覆盖。</p>
+</blockquote>
+<blockquote>
+<p>知识点：Lottie动画Json结构分为4层：<br>结构层：可以读取到动画画布的宽高，帧数，背景色，时间，起始关键帧，结束帧等信息。<br>asset：图片资源信息集合，这里放置的是 制作动画时引用的图片资源。<br>layers：图层集合，这里可以获取到多少图层，每个图层的开始帧 结束帧等。<br>shapes：元素集合，可以获取到每个图层都包含多个动画元素。</p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>1、体积小（几k到几百k）；<br>2、维护改动方便；<br>3、沟通量小；<br>4、实现效果好，不需要压缩资源，原样实现设计效果；<br>5、无需担心屏幕尺寸适配问题；<br>6、开发成本小：更新动画简单，重新替换json文件即可；</p>
+</blockquote>
+<p>UE视角：</p>
+<blockquote>
+<ol>
+<li>动画还原效果好，100%还原；</li>
+<li>直接导出，无需参数标注；</li>
+<li>一套动画适用各平台；</li>
+</ol>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>1、3D动画无法实现；<br>2、过于复杂的动画可能会因为图片资源过大导致体积增加；</p>
+</blockquote>
+<p><strong>七、SVGA：类似于lottie的另一种文件输出格式，更是目前礼物动效领域的主流应用格式。</strong></p>
+<blockquote>
+<p>插件：<a target="_blank" rel="noopener" href="https://github.com/svga/SVGAPlayer-Web">https://github.com/svga/SVGAPlayer-Web</a><br>拟3D效果：<br><a target="_blank" rel="noopener" href="http://image.woshipm.com/wp-files/2020/10/rw8dK4KpTcFXTdmOb9ga.gif">http://image.woshipm.com/wp-files/2020/10/rw8dK4KpTcFXTdmOb9ga.gif</a><br><a target="_blank" rel="noopener" href="http://image.woshipm.com/wp-files/2020/10/uK8WKU4dfrgLtP1n1mMP.gif">http://image.woshipm.com/wp-files/2020/10/uK8WKU4dfrgLtP1n1mMP.gif</a><br>svga参考文章：<a target="_blank" rel="noopener" href="http://www.woshipm.com/pd/4233836.html">http://www.woshipm.com/pd/4233836.html</a></p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>1、类似序列帧，但资源可复用，所以占用内存更小；<br>2、导出的素材支持flash；<br>3、只会生成一个svga后缀文件，代码和位图元素都被集成在了一起；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>1、比lottie占用的内存更高一些，支持的属性也更少；<br>2、多个用户反馈同时使用多个svga播放会互相干扰；</p>
+</blockquote>
+<p><strong>八、SVG矢量图（2D图形）</strong></p>
+<blockquote>
+<p>实例：<a target="_blank" rel="noopener" href="https://codesandbox.io/s/smil-logo-change-nr7ie?file=/public/index.html">https://codesandbox.io/s/smil-logo-change-nr7ie?file=/public/index.html</a><br>适用：小icon小图标，线性路线、图形。<br>Anime.js结合svg实现炫酷的文字：<a target="_blank" rel="noopener" href="https://codepen.io/shalunts/pen/jYLapb%E3%80%81https://codepen.io/SitePoint/pen/QKRovo">https://codepen.io/shalunts/pen/jYLapb、https://codepen.io/SitePoint/pen/QKRovo</a></p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>1、不失真，放大缩小图像都很清晰；<br>2、学习成本低，也是一种 DOM 结构；<br>3、使用方便，设计软件可以直接导出；<br>4、跟随浏览器窗口变化实时适配；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>1、复杂度高会减慢渲染速度；<br>2、不适合游戏应用；</p>
+</blockquote>
+<p><strong>九、canvas（2D图形）：提供的功能更原始，适合像素处理，动态渲染和大数据量绘制</strong></p>
+<blockquote>
+<p>实例：<a target="_blank" rel="noopener" href="https://www.zhangxinxu.com/study/201105/cool-canvas-snow.html">https://www.zhangxinxu.com/study/201105/cool-canvas-snow.html</a></p>
+</blockquote>
+<p>优点：</p>
+<blockquote>
+<p>1、性能高，可以自己控制绘制过程；<br>2、可控性高，像素级控制；<br>3、内存占用恒定，就是像素点个数；<br>4、运用Canvas制作的图像能够令HTML5游戏在流畅度和跨平台方面发挥更大的潜力；</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>1、上手成本高；<br>2、一旦图形被绘制完成，它就不会继续得到浏览器的关注，如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象；</p>
+</blockquote>
+<p><strong>十、webGL（3D）：Canvas 3D。是一个JavaScript API，可在任何兼容的Web浏览器中渲染高性能的交互式3D和2D图形。</strong></p>
+<blockquote>
+<p>库推荐：<br>Three.js：<a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js">https://github.com/mrdoob/three.js</a><br>示例：<a target="_blank" rel="noopener" href="https://threejs.org/examples/#webxr_vr_cubes%E3%80%81https://threejs.org/examples/#webxr_vr_dragging%E3%80%81https://threejs.org/examples/#webxr_vr_ballshooter">https://threejs.org/examples/#webxr_vr_cubes、https://threejs.org/examples/#webxr_vr_dragging、https://threejs.org/examples/#webxr_vr_ballshooter</a></p>
+</blockquote>
+<h3 id="其他公司都用什么："><a href="#其他公司都用什么：" class="headerlink" title="其他公司都用什么："></a>其他公司都用什么：</h3><p><strong>一、腾讯：</strong></p>
+<ol>
+<li>VAP（Video Animation Player）：企鹅电竞开发的一种用于播放酷炫动画的实现方案；比Webp和Apng更高的压缩率，也就是素材体积变得更小了，而且采用硬件解码，使解码速度更快。</li>
+</ol>
+<ul>
+<li>硬件解码：就是通过硬件进行视频的解码工作，其中硬件解码是由GPU来进行的，使用GPU解码能够降低CPU的工作负荷，降低功耗。 播放出来的视频较为流畅，并且能够延长移动设备播放视频的时间； MP4和VAP</li>
+<li>软件解码：软件解码则是通过软件本身占用的CPU进行解码，所以会增加CPU工作负荷，提升功耗，如果CPU能力不足，则软件也将受到影响。Lottie、GIF、Apng、Webp等】</li>
+</ul>
+<p>+相比Lottie，能实现更复杂的动画效果(比如粒子特效:火、爆炸、烟、水流、火花、落叶、云、雾、雪、尘、流星尾迹或者象发光轨迹这样的抽象视觉效果)；</p>
+<ul>
+<li>相比Webp, Apng动图方案，具有高压缩率(素材更小)、硬件解码(解码更快)的优点；<br>文档：<a target="_blank" rel="noopener" href="https://github.com/Tencent/vap">https://github.com/Tencent/vap</a><br>原理：使用webgl texture获取video和图片/文字的纹理。<br>使用：使用官方demo跑步起来、使用量一般不广泛；</li>
+</ul>
+<ol start="2">
+<li><p>PAG（Portable Animated Graphics）：鹅厂研发。<br>优点：</p>
+<blockquote>
+<p>A、能够动态修改替换文本和图片等资源；<br>B、对文件的解码速度更快压缩率更高，而且PAG桌面端预览工具还提供了性能检测功能，能够直观的帮助我们对性能问题进行优化；</p>
+</blockquote>
+</li>
+<li><p>微信游戏（入口：微信–发现–游戏–我的–顶部动画。主lottie实现，css和canvas兜底。</p>
+</li>
+</ol>
+<p><strong>二、阿里：</strong></p>
+<p>自己的轮子：（AFT：不开源）</p>
+<p><strong>三、抖音：</strong></p>
+<p>国庆活动 cocos(游戏引擎，可做动画，底层用webgl驱动)，据说有兼容问题 ，复杂动效用序列帧动画。</p>
+<p><strong>四、快手：</strong><br>国庆活动： lottie动画 </p>
+<p><strong>五、好未来</strong><br>UI组给素材、动画开发配合开发导出动效素材、开发人员使用动效素材。</p>
+<h3 id="动效库："><a href="#动效库：" class="headerlink" title="动效库："></a>动效库：</h3><ol>
+<li><p>animate.css：<a target="_blank" rel="noopener" href="https://animate.style/">https://animate.style</a><br>推荐理由：使用简单、纯css维度。预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果。</p>
+</li>
+<li><p>Anime.js：<a target="_blank" rel="noopener" href="https://www.animejs.cn/">https://www.animejs.cn/</a>  （路径动画、弹跳效果实现不错）<br>推荐理由：轻量、路径动画、使用方便；</p>
+</li>
+<li><p>Three.js：<a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js">https://github.com/mrdoob/three.js</a><br> 复杂的3d游戏试用，该动效库成熟、使用量大；</p>
+</li>
+<li><p>2D动画pixijs：<a target="_blank" rel="noopener" href="https://github.com/pixijs/pixijs%EF%BC%9B">https://github.com/pixijs/pixijs；</a></p>
+</li>
+<li><p>好的动效库集合文章：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903830098804743%EF%BC%9B">https://juejin.cn/post/6844903830098804743；</a></p>
+</li>
+</ol>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'ab41420939361193c60d',
+            clientSecret: '9861b3ff0f2dcb630dda406b8c311749f01265f7',
+            repo: 'zhangpengfeia.github.io',
+            owner: 'zhangpengfeia',
+            admin: ['zhangpengfeia'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 zhangpengfeia
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a></p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.png" class="alipay" title="扫码支持">
+            <img src="/img/weixin.png" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>
